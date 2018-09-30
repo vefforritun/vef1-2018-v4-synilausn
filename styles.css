@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 28px;
+}
+
+body {
+  background-color: #333;
+  color: #ddd;
+  font-family: 'Merriweather', serif;
+}
+
+.protection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* haus og „haus“ í fæti */
+
+header,
+.postscript .header {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-top: 20vh;
+  width: 100%;
+  height: 100vh;
+
+  background: url(img/trees.jpg) 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  font-family: 'IM Fell DW Pica', serif;
+}
+
+header h1 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  font-size: 10vmin;
+  text-align: center;
+}
+
+header h2,
+.postscript .header h2 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 auto;
+  margin-bottom: 10vmin;
+
+  text-align: center;
+  font-size: 6vmin;
+}
+
+.postscript h2 {
+  text-transform: uppercase;
+}
+
+header p,
+.postscript .header p {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 40rem;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4vmin;
+  font-weight: bold;
+}
+
+/* tilvísun */
+
+blockquote {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding-right: 1em;
+  max-width: 50rem;
+
+  text-align: right;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+blockquote cite {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+/* meginmál */
+
+.content {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+section .content p + p {
+  text-indent: 2em;
+}
+
+section .content p:first-of-type:first-letter {
+  float: left;
+  padding-right: 0.1em;
+  font-weight: bold;
+  font-size: 6em;
+  line-height: 1;
+}
+
+/* myndir í meginmáli */
+
+.separator {
+  position: relative;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 60vh;
+
+  border: 0;
+}
+
+.separator-one {
+  background: url(img/tree-fog.jpg) 50% 50% fixed;
+  background-size: cover;
+}
+
+.separator-two {
+  background: url(img/castle.jpg) 50% 50% fixed;
+  background-size: cover;
+}
+
+.separator-three {
+  background: url(img/hands.jpg) 50% 50% fixed;
+  background-size: cover;
+}
+
+.separator-four {
+  background: url(img/moon.jpg) 50% 50% fixed;
+  background-size: cover;
+}
+
+/* fótur */
+
+footer {
+  background-color: #ddd;
+  color: #333;
+  padding: 1rem 0 2rem;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .content p {
+  margin-bottom: 0;
+}
+
+footer .content {
+  margin: 0 auto;
+}
